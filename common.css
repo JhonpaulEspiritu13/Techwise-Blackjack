@@ -1,0 +1,59 @@
+/* Generic Styles */
+section{
+    padding: 20px;
+    margin: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: pink;
+}
+
+footer{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #333;
+    color: #fff;
+}
+
+h1{
+    font-size: 2em;
+    font-weight: bold;
+    margin-bottom: .5em; 
+}
+
+h2{
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-bottom: .45em; 
+}
+
+h3{
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-bottom: .4em; 
+}
+
+ul{
+    list-style: circle;
+    margin-left: 2em;
+}
+
+li{
+    margin-bottom: .1em;
+}
+
+/* Navbar List Styles */
+nav ul{
+    margin: 20px 0px;
+}
+
+nav li{
+    display: inline;
+    margin: 30px;
+}
+
+/* Footer Text Styles */
+.footer-copyright{
+    margin: 1em;
+}
