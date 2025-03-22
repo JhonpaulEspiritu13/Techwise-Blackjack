@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wireframe</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="common.css">
+</head>
+<body>
+    <header>
+        <!--Navigation Bar for other pages.-->
+        <nav>
+            <!--Technically not the 'nav' but controls items in it for flex.-->
+            <ul class="flex-container">
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./table.html">Gaming Table</a></li>
+                <li><a href="./rules.html">Blackjack Rules</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!--Wireframe Flexbox-->
+        <section class="top-element flexbox-container">
+            <h1>Wireframe</h1>
+            <p>
+                This page is an example of an HTML page structured with flex/grid containers!
+            </p>
+
+            <!--Flexbox Items-->
+            <section>
+                <h1>Flexbox Item 1</h1>
+                <p>This is the first flexbox item in this section. It should be flexible!</p>
+            </section>
+
+            <section>
+                <h1>Flexbox Item 2</h1>
+                <p>This is the second flexbox item in this section. It should be flexible!</p>
+            </section>
+
+            <section>
+                <h1>Flexbox Item 3</h1>
+                <p>This is the third flexbox item in this section. It should be flexible!</p>
+            </section>
+        </section>
+
+        <!--Displayed only above breakpoint-->
+        <section class="disappearing">
+            <h1>Disappearing Section</h1>
+            <p>This section disappears when the screen's width is too low.</p>
+        </section>
+
+        <!--Displayed only below breakpoint-->
+        <section class="mobileFeature">
+            <h1>Mobile Feature</h1>
+            <p>This section appears on a mobile device.</p>
+        </section>
+    </main>
+
+    <footer>
+        <!--Leverage Copyright-->
+        <p class="footer-copyright">&copy; Copyright 2025 Leverage</p>
+    </footer>
+</body>
+</html>
