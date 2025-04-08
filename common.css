@@ -21,6 +21,24 @@
     border-radius: 20px;
 }
 
+.spaced-element-small{
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.spaced-element{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.input-field{
+    width: 205px;
+}
+
+.input-with-button{
+    width: 150px;
+}
+
 /* Generic Styles */
 * {
     /* Doing font on every element unless specified otherwise */
@@ -89,6 +107,11 @@ ul{
 
 li{
     margin-bottom: .1em;
+}
+
+label{
+    font-size: 1.1em;
+    color: #444;
 }
 
 /* Navbar List Styles */
