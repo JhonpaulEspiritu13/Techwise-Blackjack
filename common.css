@@ -8,6 +8,10 @@
     margin-top: 5em;
 }
 
+.bottom-element{
+    margin-bottom: 3.5em;
+}
+
 .footer-copyright{
     margin: 1em;
 }
@@ -37,6 +41,10 @@
 
 .input-with-button{
     width: 150px;
+}
+
+.should-hide{
+    display: none;
 }
 
 /* Generic Styles */
