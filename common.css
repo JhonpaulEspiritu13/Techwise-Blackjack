@@ -125,12 +125,13 @@ label{
 table{
     border: 3px solid black;
     border-collapse: collapse;
+    width: 100%;
 }
 
 th, td{
     border: 1px solid black;
-    padding-left: 7px;
-    padding-right: 7px;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 /* Table Styling */
