@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API Request</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    
+    <!-- CSS Links -->
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="common.css">
+</head>
+<body>
+    <header>
+        <!--Navigation Bar for other pages.-->
+        <nav>
+            <ul class="flex-container">
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./table.html">Gaming Table</a></li>
+                <li><a href="./rules.html">Blackjack Rules</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="top-element">
+        <h3>API Request</h3>
+        <p>This is a request for the US Fiscal API. <a href="https://fiscaldata.treasury.gov/api-documentation/">Documentation Link</a></p>
+        <table id="data-fill-table" class="spaced-element">
+            <tr class="endpoint_header">
+                <th>Record Date</th>
+                <th>Type of Account</th>
+                <th>Opening Balance This Month</th>
+                <th>Opening Balance This Fiscal Year</th>
+                <th>Fiscal Year</th>
+            </tr>
+
+            <!--From the Javascript File, this will be populated by the API Request.-->
+        </table>
+    </section>
+
+    <footer>
+        <!--Leverage Copyright-->
+        <p class="footer-copyright">&copy; Copyright 2025 <span id="footer">Leverage</span></p>
+    </footer>
+
+    <script src="api_request.js"></script>
+</body>
+</html>
