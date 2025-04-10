@@ -47,6 +47,10 @@
     display: none;
 }
 
+.should-fill{
+    width: 100%;
+}
+
 /* Generic Styles */
 * {
     /* Doing font on every element unless specified otherwise */
@@ -101,11 +105,10 @@ h3{
     margin-bottom: .4em; 
 }
 
-h1, h2, h3 {
+h1, h2, h3, th {
     /* Styling the Fonts themselves */
     font-family: 'Inter', sans-serif;
     font-weight: bold;
-
 }
 
 ul{
@@ -125,13 +128,15 @@ label{
 table{
     border: 3px solid black;
     border-collapse: collapse;
-    width: 100%;
+}
+
+th{
+    font-size: 1.1em;
 }
 
 th, td{
     border: 1px solid black;
-    padding-left: 10px;
-    padding-right: 10px;
+    padding: 10px;
 }
 
 /* Table Styling */
