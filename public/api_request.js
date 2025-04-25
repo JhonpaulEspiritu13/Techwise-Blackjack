@@ -37,7 +37,7 @@ function makeRequest(url, object_store, object_function, is_print = false){
         }
 
         object_store.data = data;
-        object_function(object_store);
+        object_function(data);
     }).catch((error) => {
         console.log("An error occured:", error);
     });
