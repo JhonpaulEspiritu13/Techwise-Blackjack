@@ -1,51 +1,31 @@
+// --Imports--
+import express from "express";
+import cors from "cors";
+import legacyRouter from "./routes/legacyPagesRoutes.js";
+
 // --Constants--
 // Sets up express for server stuff.
-const express = require("express");
 const app = express();
 const PORT = 3000;
 
 // --Middleware--
-// Logs user requests.
-const loggerMiddleware = (req, res, next) => {
-    console.log(`${req.method} ${req.url}`);
-    next();
-};
-
 // Defines what the app can use and return.
 app.use(express.static("public"));
-app.use(loggerMiddleware);
-
-// --Define App Pages--
-// Home Page
-app.get("/", (req, res) => {
-    res.sendFile(__dirname + "\\public\\index.html");
+// Client-side JS Requests.
+app.use(cors());
+// Parse incoming JSON requests.
+app.use(express.json());
+// Logs user requests.
+app.use((req, res, next) => {
+    console.log(`${req.method} ${req.url}`);
+    next();
 });
 
-// Table Page
-app.get("/table", (req, res) => {
-    res.sendFile(__dirname + "\\public\\table.html");
-});
+// --Routes--
+// The Legacy Pages from previous assignments.
+app.use("/legacy", legacyRouter);
 
-// Rules Page
-app.get("/rules", (req, res) => {
-    res.sendFile(__dirname + "\\public\\rules.html");
-});
-
-// Signup Page
-app.get("/signup", (req, res) => {
-    res.sendFile(__dirname + "\\public\\signup.html");
-});
-
-// Basic Example Wireframe
-app.get("/wireframe", (req, res) => {
-    res.sendFile(__dirname + "\\public\\wireframe.html");
-});
-
-// API Request Page
-app.get("/api_request", (req, res) => {
-    res.sendFile(__dirname + "\\public\\api_request.html");
-});
-
+// --Start Server--
 // Port Listener
 app.listen(PORT, () => {
     console.log(`Server is running at http://127.0.0.1:${PORT}`);
