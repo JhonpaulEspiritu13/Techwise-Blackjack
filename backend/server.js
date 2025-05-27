@@ -2,6 +2,7 @@
 import express from "express";
 import cors from "cors";
 import legacyRouter from "./routes/legacyPagesRoutes.js";
+import playerRouter from "./routes/playerRoutes.js";
 
 // --Constants--
 // Sets up express for server stuff.
@@ -24,6 +25,8 @@ app.use((req, res, next) => {
 // --Routes--
 // The Legacy Pages from previous assignments.
 app.use("/legacy", legacyRouter);
+// Player routes, which will be defined as our API.
+app.use("/api/v1/players", playerRouter)
 
 // --Start Server--
 // Port Listener
