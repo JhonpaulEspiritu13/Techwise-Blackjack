@@ -42,7 +42,7 @@ async function main() {
     app.listen(PORT, () => {
         console.log(`Server is running at http://127.0.0.1:${PORT}`);
     });
-}
+};
 
 // --Routes--
 // The Legacy Pages from previous assignments.
